@@ -1,0 +1,8 @@
+path: ../datasets/kitti
+train: images/train
+val: images/val
+
+names:
+    0: Car
+    1: Pedestrian
+    2: Cyclist
