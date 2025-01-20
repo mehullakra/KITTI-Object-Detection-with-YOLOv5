@@ -1,13 +1,15 @@
-# Multi-Object-Detection-with-YOLO
+# Multi-Object-Detection-with-YOLO-on-KITTI-Dataset
 
 ## Step 0: Create Conda Environment
+
+Create and activate the Conda environment:
 
 ```bash
 conda create -n kittiyolo python=3.8 -y
 conda activate kittiyolo
 ```
 
-Install a few dependencies:
+Install necessary dependencies:
 
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
@@ -15,7 +17,9 @@ conda install cuda -c nvidia/label/cuda-11.8.0
 pip install opencv-python
 ```
 
-## Step 1: Install YOLOv5 in Your Project Directory
+## Step 1: Install YOLOv5
+
+Clone the YOLOv5 repository and install its dependencies:
 
 ```bash
 git clone https://github.com/ultralytics/yolov5  # clone
@@ -23,12 +27,20 @@ cd yolov5
 pip install -r requirements.txt
 ```
 
-## Step 2: Prepare Dataset
+## Step 2: Prepare the Dataset
 
-1. Create a folder called `data` in the project directory.
-2. Place the files `data_object_image_2.zip` and `data_object_label_2.zip` in the `data` folder.
-3. Extract the files. You will now have the folders `training` and `testing`.
-4. The `testing` folder is not needed for this implementation; you can delete it or keep it.
+1. Download the KITTI dataset from the KITTI Vision Benchmark Suite. Specifically, download:
+
+Image data: data_object_image_2.zip
+Label data: data_object_label_2.zip
+
+2. Create a folder called data in the project directory.
+
+3. Place the downloaded files (data_object_image_2.zip and data_object_label_2.zip) inside the data folder.
+
+4. Extract the files to get the folders training and testing.
+
+5. The testing folder is not needed for this implementation; you can delete it or keep it.
 
 ## Step 3: Run Data Preprocessing Scripts
 
