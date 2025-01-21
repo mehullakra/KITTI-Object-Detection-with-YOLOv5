@@ -32,6 +32,7 @@ pip install -r requirements.txt
    Specifically, download:
 
 left color images: ```data_object_image_2.zip```
+
 training labels of object data set: ```data_object_label_2.zip```
 
 2. Place the downloaded files ```(data_object_image_2.zip and data_object_label_2.zip)``` inside the data folder.
