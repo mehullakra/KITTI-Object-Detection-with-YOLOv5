@@ -82,4 +82,3 @@ All training results are saved to `yolov5/runs/train/`, including:
 - Best weights
 - Last weights
 - Useful training and performance metrics
-```
