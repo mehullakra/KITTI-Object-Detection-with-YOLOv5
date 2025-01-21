@@ -5,24 +5,26 @@
 Create and activate the Conda environment:
 
 ```bash
-conda create -n kittiyolo python=3.8 -y
+conda create -n kittiyolo
 conda activate kittiyolo
 ```
 
 Install necessary dependencies:
 
 ```bash
-conda install cuda -c nvidia/label/cuda-11.8.0
+conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
+conda install cuda -c nvidia/label/cuda-12.4.0
 ```
 
 ## Step 1: Install YOLOv5
 
 Clone the YOLOv5 repository and install its dependencies:
 
+in `custom_requirements.txt' we comment out the pytorch related code since we already installed it.
+
 ```bash
 git clone https://github.com/ultralytics/yolov5
-cd yolov5
-pip install -r requirements.txt
+pip install -r custom_requirements.txt
 ```
 
 ## Step 2: Prepare the Dataset
