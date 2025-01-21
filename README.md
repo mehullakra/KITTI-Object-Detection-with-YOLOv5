@@ -37,7 +37,7 @@ pip install -r custom_requirements.txt
 
    - training labels of object data set: ```data_object_label_2.zip```
 
-2. Place the downloaded files ```(data_object_image_2.zip and data_object_label_2.zip)``` inside the data folder.
+2. Place the downloaded files inside the data folder.
 
 3. Extract the files to get the folders ```training``` and ```testing```.
 
@@ -46,9 +46,9 @@ pip install -r custom_requirements.txt
 ## Step 3: Run Data Preprocessing Scripts
 
 These scripts convert the input data format to YOLO-compatible format, where the bounding box (bbox) labels are represented by:
-- `class_id, x_center(normalized), y_center(normalized), width(normalized), height(normalized)`
+- `class_id`, `x_center(normalized)`, `y_center(normalized)`, `width(normalized)`, `height(normalized)`
 
-This replaces the KITTI dataset format of `x_min, y_min, x_max, y_max`. Normalization ensures bbox coordinates remain accurate regardless of image resizing.
+This replaces the KITTI dataset format of `x_min`, `y_min`, `x_max`, `y_max`. Normalization ensures bbox coordinates remain accurate regardless of image resizing.
 
 Run the commands below from the project root directory:
 
