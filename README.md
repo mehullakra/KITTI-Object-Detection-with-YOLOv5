@@ -66,10 +66,10 @@ python -m scripts.visualize_data
 
 ## Step 4: Model Training
 
-To train the model, we will use the YOLOv5s model with its pretrained weights, finetuned on our dataset. Pretrained weights are auto-downloaded. The `data.yaml` file specifies information about the dataset, including:
-- `train` path
-- `val` path
-- Number of classes
+To train the model, we will use the YOLOv5s model with its pretrained weights, to finetune on our dataset. Pretrained weights are auto-downloaded. The `data.yaml` file specifies information about the dataset, including:
+- `train path`
+- `val path`
+- `Number of classes`
 
 Run the following command:
 
