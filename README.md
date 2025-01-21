@@ -31,9 +31,9 @@ pip install -r requirements.txt
 1. Download the KITTI dataset from the KITTI Vision Benchmark Suite - https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d
    Specifically, download:
 
-left color images: ```data_object_image_2.zip```
+   - left color images: ```data_object_image_2.zip```
 
-training labels of object data set: ```data_object_label_2.zip```
+   - training labels of object data set: ```data_object_label_2.zip```
 
 2. Place the downloaded files ```(data_object_image_2.zip and data_object_label_2.zip)``` inside the data folder.
 
