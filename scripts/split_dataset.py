@@ -1,6 +1,7 @@
 import os
 import random
 import shutil
+from tqdm import tqdm
 
 def split_dataset(image_dir, label_dir, output_dir, split_ratio = 0.8):
     """
@@ -32,14 +33,14 @@ def split_dataset(image_dir, label_dir, output_dir, split_ratio = 0.8):
     val_files = image_files[split_idx:]
 
     # move files to respective directories
-    for image_file in train_files:
+    for image_file in tqdm(train_files, desc="Processing training files"):
         base_name = os.path.splitext(image_file)[0]
         shutil.move(os.path.join(image_dir, image_file), os.path.join(train_image_dir, image_file))
         label_file = os.path.join(label_dir, f"{base_name}.txt")
         if os.path.exists(label_file):
             shutil.move(label_file, os.path.join(train_label_dir, f"{base_name}.txt"))
 
-    for image_file in val_files:
+    for image_file in tqdm(val_files, desc="Processing validation files"):
         base_name = os.path.splitext(image_file)[0]
         shutil.move(os.path.join(image_dir, image_file), os.path.join(val_image_dir, image_file))
         label_file = os.path.join(label_dir, f"{base_name}.txt")

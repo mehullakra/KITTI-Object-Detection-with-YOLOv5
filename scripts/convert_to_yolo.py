@@ -1,3 +1,4 @@
+from tqdm import tqdm
 import os
 import cv2
 
@@ -14,7 +15,10 @@ def convert_to_yolo(kitti_label_path, yolo_label_path, image_dir):
     os.makedirs(yolo_label_path, exist_ok=True)
 
     # Iterate over all KITTI label files
-    for label_file in os.listdir(kitti_label_path):
+    label_files = os.listdir(kitti_label_path)
+
+    for label_file in tqdm(label_files, desc="Converting KITTI to YOLO"):
+
         # Get corresponding image file
         base_name = os.path.splitext(label_file)[0]
         image_file = os.path.join(image_dir, f"{base_name}.png") # since they are .png files
