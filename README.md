@@ -79,7 +79,4 @@ Run the following command:
 python yolov5/train.py --img 640 --epochs 30 --data data.yaml --weights yolov5s.pt
 ```
 
-All training results are saved to `yolov5/runs/train/`, including:
-- Best weights
-- Last weights
-- Useful training and performance metrics
+## Step 5: Model Export to TensorRT
