@@ -20,7 +20,7 @@ conda install cuda -c nvidia/label/cuda-12.4.0
 
 Clone the YOLOv5 repository and install its dependencies:
 
-in `custom_requirements.txt' we comment out the pytorch related code since we already installed it.
+in `custom_requirements.txt` we comment out the pytorch related code since we already installed it.
 
 ```bash
 git clone https://github.com/ultralytics/yolov5
