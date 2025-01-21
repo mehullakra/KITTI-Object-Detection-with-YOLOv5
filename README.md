@@ -36,8 +36,6 @@ left color images: data_object_image_2.zip
 training labels of object data set: data_object_label_2.zip
 ```
 
-2. Create a folder called ```data``` in the project directory.
-
 3. Place the downloaded files ```(data_object_image_2.zip and data_object_label_2.zip)``` inside the data folder.
 
 4. Extract the files to get the folders ```training``` and ```testing```.
