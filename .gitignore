@@ -4,3 +4,4 @@
 /data/training/label_2
 /datasets/kitti/labels/train
 /datasets/kitti/labels/val
+/scripts/__pycache__
