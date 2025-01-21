@@ -1,12 +1,16 @@
 import os
 import cv2
+import random
 
 def visualize_annotation(image_dir, label_dir, class_names, num_samples = 5):
     """visualizes bounding boxes from YOLO annotations on images"""
     image_files = os.listdir(image_dir)
     label_files = os.listdir(label_dir)
 
-    for i, image_file in enumerate(image_files[:num_samples]):
+    # Randomly select `num_samples` images
+    random_samples = random.sample(image_files, min(num_samples, len(image_files)))
+
+    for image_file in random_samples:
         # make sure corresponding label exists
         base_name = os.path.splitext(image_file)[0]
         label_file = os.path.join(label_dir, f"{base_name}.txt")
