@@ -20,7 +20,7 @@ conda install cuda -c nvidia/label/cuda-11.1.0
 Clone the YOLOv5 repository and install its dependencies:
 
 ```bash
-git clone https://github.com/ultralytics/yolov5  # clone
+git clone https://github.com/ultralytics/yolov5
 cd yolov5
 pip install -r requirements.txt
 ```
