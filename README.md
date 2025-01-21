@@ -79,4 +79,4 @@ Run the following command:
 python yolov5/train.py --img 640 --epochs 30 --data data.yaml --weights yolov5s.pt
 ```
 
-## Step 5: Model Export to TensorRT
+## Step 5: Model quantize and then Export to TensorRT then deploy on edge device and upload demo
