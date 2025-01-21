@@ -9,6 +9,12 @@ conda create -n kittiyolo python=3.8 -y
 conda activate kittiyolo
 ```
 
+Install necessary dependencies:
+
+```bash
+conda install cuda -c nvidia/label/cuda-11.1.0
+```
+
 ## Step 1: Install YOLOv5
 
 Clone the YOLOv5 repository and install its dependencies:
