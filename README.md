@@ -14,7 +14,6 @@ Install necessary dependencies:
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install cuda -c nvidia/label/cuda-11.8.0
-pip install opencv-python
 ```
 
 ## Step 1: Install YOLOv5
