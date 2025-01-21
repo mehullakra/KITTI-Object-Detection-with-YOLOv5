@@ -1,4 +1,4 @@
-# Multi-Object-Detection-with-YOLO-on-KITTI-Dataset
+# Object-Detection-with-YOLOv5-on-KITTI-Dataset
 
 ## Step 0: Create Conda Environment
 
