@@ -12,7 +12,7 @@ conda activate kittiyolo
 Install necessary dependencies:
 
 ```bash
-conda install cuda -c nvidia/label/cuda-11.1.0
+conda install cuda -c nvidia/label/cuda-11.8.0
 ```
 
 ## Step 1: Install YOLOv5
