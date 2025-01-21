@@ -28,18 +28,19 @@ pip install -r requirements.txt
 
 ## Step 2: Prepare the Dataset
 
-1. Download the KITTI dataset from the KITTI Vision Benchmark Suite. Specifically, download:
+1. Download the KITTI dataset from the KITTI Vision Benchmark Suite - https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d
+   Specifically, download:
 
-Image data: data_object_image_2.zip
-Label data: data_object_label_2.zip
+```
+left color images: data_object_image_2.zip
+training labels of object data set: data_object_label_2.zip
+```
 
-2. Create a folder called data in the project directory.
+2. Place the downloaded files ```(data_object_image_2.zip and data_object_label_2.zip)``` inside the data folder.
 
-3. Place the downloaded files (data_object_image_2.zip and data_object_label_2.zip) inside the data folder.
+3. Extract the files to get the folders ```training``` and ```testing```.
 
-4. Extract the files to get the folders training and testing.
-
-5. The testing folder is not needed for this implementation; you can delete it or keep it.
+4. The ```testing``` folder is not needed for this implementation; you can delete it or keep it.
 
 ## Step 3: Run Data Preprocessing Scripts
 
