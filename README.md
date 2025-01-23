@@ -79,6 +79,10 @@ Run the following command:
 python yolov5/train.py --img 640 --epochs 30 --data data.yaml --weights yolov5s.pt
 ```
 
+according to best practices - https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results/#training-settings
+
+you should use `300 epochs` as a starting point, but for the sake of this experiment and limited resources we choose arbitrary number - `30`
+
 training results are saved in `yolov5\runs\train` where you will find training metrics as well as the best and last weights for the model
 
 note we use `image size` as 640 because that is what the input of the yolov5s model is
