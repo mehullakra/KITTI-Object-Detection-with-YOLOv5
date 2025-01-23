@@ -79,4 +79,17 @@ Run the following command:
 python yolov5/train.py --img 640 --epochs 30 --data data.yaml --weights yolov5s.pt
 ```
 
-## Step 5: Model quantize and then Export to TensorRT then deploy on edge device and upload demo
+training results are saved in `yolov5\runs\train` where you will find training metrics as well as the best and last weights for the model
+
+note we use `image size` as 640 because that is what the input of the yolov5s model is
+
+## Step 5: Validate the best model
+
+from the project root directory run the following command
+```bash
+python yolov5/val.py --weights yolov5\runs\train\exp7\weights\best.pt --data data.yaml --img 640
+```
+
+the results will be saved to `yolov5\runs\val\exp`
+
+## Step x: Model quantize and then Export to TensorRT then deploy on edge device and upload demo
