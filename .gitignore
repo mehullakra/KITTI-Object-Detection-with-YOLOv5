@@ -1,6 +1,8 @@
 
+*.cache
 *.zip
 *.png
+*.pt
 /data/training/label_2
 /datasets/kitti/labels/train
 /datasets/kitti/labels/val
