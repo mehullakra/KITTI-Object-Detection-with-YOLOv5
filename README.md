@@ -96,4 +96,4 @@ python yolov5/val.py --weights yolov5\runs\train\exp7\weights\best.pt --data dat
 
 the results will be saved to `yolov5\runs\val\exp`
 
-## Step x: Model quantize and then Export to TensorRT then deploy on edge device and upload demo
+## Step x: Quantize Model and then Export to TensorRT then deploy on edge device and upload demo
